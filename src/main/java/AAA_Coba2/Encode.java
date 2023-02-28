@@ -1,7 +1,6 @@
-package Base64Lib;
+package AAA_Coba2;
 
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.List;
 
 public class Encode {

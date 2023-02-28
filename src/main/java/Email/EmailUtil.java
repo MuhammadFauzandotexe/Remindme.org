@@ -1,4 +1,4 @@
-package coba.Send.Email.dong.maniezz;
+package Email;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;

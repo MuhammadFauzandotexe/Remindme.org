@@ -1,4 +1,4 @@
-package EndPoint;
+package Controller;
 import databaseResource.Bash64Token;
 import databaseResource.RandonString;
 import javax.ws.rs.GET;

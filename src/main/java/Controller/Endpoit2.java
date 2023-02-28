@@ -1,15 +1,10 @@
-package EndPoint;
-
-import databaseResource.ConnectionDriver;
-import databaseResource.EntityRegistration;
+package Controller;
 
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 @Path("endpoit2")
 public class Endpoit2 {

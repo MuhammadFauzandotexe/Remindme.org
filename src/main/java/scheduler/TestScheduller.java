@@ -6,10 +6,10 @@ import io.quarkus.scheduler.Scheduled;
 import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class TestScheduller {
-    @Scheduled(every = "5s")
-    public void everySecond(){
-        Log.info("every SECONd");
-    }
+//    @Scheduled(every = "5s")
+//    public void everySecond(){
+//        Log.info("every SECONd");
+//    }
 }
 /*
 |--------------(Second 0-59)
