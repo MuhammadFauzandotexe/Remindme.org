@@ -2,7 +2,7 @@ package databaseResource;
 import javax.persistence.*;
 @Entity
 @Table(name = "user_registration")
-public class EntityRegistration {
+public class Registration {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;

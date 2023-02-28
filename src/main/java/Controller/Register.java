@@ -1,6 +1,6 @@
 package Controller;
-import databaseResource.Bash64Token;
-import databaseResource.RandonString;
+import Utility.Bash64Token;
+import Utility.RandonString;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import java.sql.Connection;
@@ -9,11 +9,6 @@ import java.sql.PreparedStatement;
 @Path("register")
 public class Register {
     private Connection connection;
-    public static void main(String[] args) {
-        Bash64Token bash64 = new Bash64Token("selamat datang");
-        RandonString randon = new RandonString();
-        String bash64Token = bash64.getBash64();
-    }//bWZhdXphbjUxMDg3QGdtYWlsLmNvbSY9ZmF1emFuJj11THByaExlVktVQ1dFZXFHV2JEQQ==
     @GET@Path("{email}/{username}/{password}")//http://localhost:8080/register/mfauzan51087@gmail.com/fauzan/loveyoubabe
     //https://061c-2404-c0-9820-00-44-92d8.ap.ngrok.io/register/mfauzan51087@gmail.com/fauzan/kreditguys
     public String coba(String email,String username,String password){

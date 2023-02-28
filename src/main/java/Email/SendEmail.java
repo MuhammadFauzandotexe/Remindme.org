@@ -1,12 +1,20 @@
 package Email;
-import java.util.Properties;
 
-import javax.mail.*;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+import io.quarkus.logging.Log;
+
 public class SendEmail {
-    public static void main(String[] args) {
-        System.out.println(1+1);
+    public String email;
+    public String sender;
+    public String task;
+    public String taskName;
+    public SendEmail(String email, String sender, String task, String taskName){
+        this.email = email;
+        this.sender = sender;
+        this.task = task;
+        this.taskName = taskName;
+    }
+    public void emailSend(){
+        System.out.println("task from remindme.org "+ taskName +" " + task);
+        //Log.info("task from remindme.org"+ taskName +"\n" + task);
     }
 }

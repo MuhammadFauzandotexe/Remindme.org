@@ -1,4 +1,4 @@
-package databaseResource;
+package Utility;
 
 import java.util.Base64;
 

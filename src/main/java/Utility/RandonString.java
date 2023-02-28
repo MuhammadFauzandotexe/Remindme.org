@@ -1,4 +1,4 @@
-package databaseResource;
+package Utility;
 public class RandonString {
     public String getAlphaNumericString(int n) {
         String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"0123456789"+"abcdefghijklmnopqrstuvxyz";
