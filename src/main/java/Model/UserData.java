@@ -11,6 +11,10 @@ public class UserData extends PanacheEntityBase {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid",strategy = "org.hibernate.id.UUIDGenerator")
     public String id;
+    @Column(name = "email")
+    public String email;
+    @Column(name = "username")
+    public String username;
     @Column(name = "task_name")
     public String taskName;
     @Column(name = "task")

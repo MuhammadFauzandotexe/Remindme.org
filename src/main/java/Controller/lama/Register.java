@@ -1,4 +1,4 @@
-package Controller;
+package Controller.lama;
 import Utility.Bash64Token;
 import Utility.RandonString;
 import javax.ws.rs.GET;
