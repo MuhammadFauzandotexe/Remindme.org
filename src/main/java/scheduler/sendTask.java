@@ -9,9 +9,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-@ApplicationScoped
+//@ApplicationScoped
 public class sendTask {
-    @Scheduled(every = "10s")
+    //@Scheduled(every = "10s")
     public void everySecond(){
         Integer hours = java.time.LocalTime.now().getHour();
         Integer minute = java.time.LocalTime.now().getMinute();

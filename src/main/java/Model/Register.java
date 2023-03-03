@@ -1,11 +1,16 @@
-package databaseResource;
+package Model;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 @Entity
 @Table(name = "user_registration")
-public class Registration {
+public class Register extends PanacheEntityBase {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long id;
+    @Column(name = "id",nullable = false)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid",strategy = "org.hibernate.id.UUIDGenerator")
+    public String id;
     @Column(name = "email_registration",length = 50,unique = false,nullable = true)
     public String email;
     @Column(name = "name_registration",length = 50,nullable = true)
@@ -14,6 +19,6 @@ public class Registration {
     public String password;
     @Column(name = "token",unique = false,nullable = true)
     public String key_value;
-    @Column(name = "bash64_decode",nullable = true)
-    public String bash64_decode;
+    @Column(name = "key_value_encode",nullable = true)
+    public String keyValueEncode;
 }
