@@ -18,8 +18,5 @@ public class Registration extends PanacheEntityBase {
     public String password;
     public String validationLink;
     public String token;
-    @OneToMany
-    @JoinColumn(name = "password",referencedColumnName = "password")
-    public List<Registered> registrations;
 
 }
